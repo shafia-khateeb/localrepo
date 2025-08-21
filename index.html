@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+Body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        background: white;
+        padding: 20px 40px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transform: transform 0.5s,background 0.5s;
+    }
+
+    .box:hover {
+      background: #ff7e5f;
+      color: white;
+        transform: scale(1.1);
+    }
+
+    @keyframes bounce {
+   0%,100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+     .animate {
+        animation: bounce 1s infinite;
+     }
+    </style>
+</head>
+<body>
+    <div class="box animate">
+        Hover and watch me Bounce!
+    </div>
+</body>
+</html>
